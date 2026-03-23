@@ -18,3 +18,10 @@ enum maple_node_type {
 	maple_leaf64,
 	maple_dense
 };
+
+//
+struct metadata {
+	unsigned char gap; // The largest empty space
+	unsigned char end; // The end of the data
+};
+
