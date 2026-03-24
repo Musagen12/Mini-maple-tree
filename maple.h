@@ -1,14 +1,14 @@
-// Slots
+// Slot related definitions
 #define GENERIC_SLOTS = 31
 #define RANGE64_SLOTS = 16
 #define ARANGE64_SLOTS = 10
 
-// Pivots
+// Pivot related definitions
 #define GENERIC_PIVOTS = GENERIC_SLOTS - 1
 #define RANGE64_PIVOTS = RANGE64_SLOTS - 1
 #define ARANGE64_PIVOTS = ARANGE64_SLOTS - 1
 
-// The masks
+// The masks for bitwise manipulation
 #define NODE_MASK = 255 // This is meant to clear the encoded bits
 
 // The node types
@@ -24,4 +24,3 @@ struct metadata {
 	unsigned char gap; // The largest empty space
 	unsigned char end; // The end of the data
 };
-
