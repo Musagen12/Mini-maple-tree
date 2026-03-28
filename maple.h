@@ -13,13 +13,13 @@
 
 // The node types
 enum maple_node_type {
-	maple_range64,
-	maple_arange64,
-	maple_leaf64,
-	maple_dense
+	maple_range64,  // Regular nodes
+	maple_arange64,  // For an allocation tree
+	maple_leaf64,  // Store data not pointers to node
+	maple_dense  // No pivots
 };
 
-//
+// The metadata definition
 struct metadata {
 	unsigned char gap; // The largest empty space
 	unsigned char end; // The end of the data
